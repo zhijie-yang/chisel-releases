@@ -1,0 +1,16 @@
+package: liblapack3
+essential:
+  - liblapack3_copyright
+slices:
+  libs:
+    essential:
+      - libblas3_libs
+      - libc6_libs
+      - libgcc-s1_libs
+      - libgfortran5_libs
+    contents:
+      /usr/lib/*-linux-*/lapack/liblapack.so.3*:
+      /usr/lib/x86_64-linux-gnu/liblapack.so.3: {symlink: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3}
+  copyright:
+    contents:
+      /usr/share/doc/liblapack3/copyright:

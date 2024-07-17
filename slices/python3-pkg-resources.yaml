@@ -1,0 +1,12 @@
+package: python3-pkg-resources
+essential:
+  - python3-pkg-resources_copyright
+slices:
+  modules:
+    essential:
+      - python3.12_core
+    contents:
+      /usr/lib/python3/dist-packages/pkg_resources/**:
+  copyright:
+    contents:
+      /usr/share/doc/python3-pkg-resources/copyright:

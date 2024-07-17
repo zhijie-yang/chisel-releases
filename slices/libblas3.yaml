@@ -1,0 +1,14 @@
+package: libblas3
+essential:
+  - libblas3_copyright
+slices:
+  libs:
+    essential:
+      - libc6_libs
+      - libgcc-s1_libs
+    contents:
+      /usr/lib/*-linux-*/blas/libblas.so.3*:
+      /usr/lib/x86_64-linux-gnu/libblas.so.3: {symlink: /usr/lib/x86_64-linux-gnu/blas/libblas.so.3}
+  copyright:
+    contents:
+      /usr/share/doc/libblas3/copyright:
