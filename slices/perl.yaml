@@ -1,0 +1,54 @@
+package: perl
+
+essential:
+- perl_copyright
+
+slices:
+  copyright:
+    contents:
+      /usr/share/doc/perl/copyright:
+
+  config:
+    contents:
+      /etc/perl/Net/libnet.cfg:
+
+  libs:
+    essential:
+    - libperl5.38t64_libs
+    - perl-base_modules
+    - perl-modules-5.38_modules
+
+  bins:
+    essential:
+    - perl_libs
+    contents:
+      /usr/bin/corelist:
+      /usr/bin/cpan:
+      /usr/bin/enc2xs:
+      /usr/bin/encguess:
+      /usr/bin/h2ph:
+      /usr/bin/h2xs:
+      /usr/bin/instmodsh:
+      /usr/bin/json_pp:
+      /usr/bin/libnetcfg:
+      # /usr/bin/perlbug:
+      /usr/bin/perldoc:
+      /usr/bin/perlivp:
+      # hard link
+      # /usr/bin/perlthanks: {copy: /usr/bin/perlbug}
+      /usr/bin/piconv:
+      /usr/bin/pl2pm:
+      /usr/bin/pod2html:
+      /usr/bin/pod2man:
+      /usr/bin/pod2text:
+      /usr/bin/pod2usage:
+      /usr/bin/podchecker:
+      /usr/bin/prove:
+      /usr/bin/ptar:
+      /usr/bin/ptardiff:
+      /usr/bin/ptargrep:
+      /usr/bin/shasum:
+      /usr/bin/splain:
+      /usr/bin/streamzip:
+      /usr/bin/xsubpp:
+      /usr/bin/zipdetails:
