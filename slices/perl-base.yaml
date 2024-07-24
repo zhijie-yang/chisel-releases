@@ -6,10 +6,10 @@ essential:
 slices:
   modules:
     contents:
-      /usr/lib/*-linux-*/perl-base/*.pl:
-      /usr/lib/*-linux-*/perl-base/*.pm:
       /usr/lib/*-linux-*/perl-base/**/*.pl:
       /usr/lib/*-linux-*/perl-base/**/*.pm:
+      /usr/lib/*-linux-*/perl-base/*.pl:
+      /usr/lib/*-linux-*/perl-base/*.pm:
 
   libs:
     essential:
@@ -23,9 +23,9 @@ slices:
       - perl-base_libs
       - perl-base_modules
     contents:
-      /usr/bin/perl:
       # hard link
       /usr/bin/perl5.38.2: {copy: /usr/bin/perl}
+      /usr/bin/perl:
 
   copyright:
     contents:
