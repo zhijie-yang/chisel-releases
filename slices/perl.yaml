@@ -1,7 +1,7 @@
 package: perl
 
 essential:
-- perl_copyright
+  - perl_copyright
 
 slices:
   copyright:
@@ -14,13 +14,13 @@ slices:
 
   libs:
     essential:
-    - libperl5.38t64_libs
-    - perl-base_modules
-    - perl-modules-5.38_modules
+      - libperl5.38t64_libs
+      - perl-base_modules
+      - perl-modules-5.38_modules
 
   bins:
     essential:
-    - perl_libs
+      - perl_libs
     contents:
       /usr/bin/corelist:
       /usr/bin/cpan:

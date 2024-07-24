@@ -18,7 +18,6 @@ slices:
       /usr/lib/*-linux-*/libperl.so.5.38*:
       /usr/lib/*-linux-*/perl/5.38*:
 
-
   configs:
     contents:
       /usr/lib/*-linux-*/perl/cross-config-5.38.2/Config.pm:
