@@ -16,9 +16,9 @@ slices:
       - zlib1g_libs
     contents:
       /usr/lib/*-linux-*/libperl.so.5.38*:
-      /usr/lib/*-linux-*/perl/5.38*:
+      /usr/lib/*-linux-*/perl/5.38*/**:
 
-  configs:
+  config:
     contents:
       /usr/lib/*-linux-*/perl/cross-config-5.38.2/Config.pm:
       /usr/lib/*-linux-*/perl/cross-config-5.38.2/Config_heavy.pl:
@@ -28,7 +28,7 @@ slices:
 
   bins:
     essential:
-      - libperl5.38t64_configs
+      - libperl5.38t64_config
       - libperl5.38t64_libs
     contents:
       /usr/bin/cpan5.38-*-linux-*:
