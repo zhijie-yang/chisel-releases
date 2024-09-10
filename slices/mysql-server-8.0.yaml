@@ -6,6 +6,7 @@ essential:
 slices:
   bins:
     essential:
+      - base-files_base
       - lsb-base_bins
       - mysql-client-8.0_bins
       - mysql-common_config
@@ -26,6 +27,9 @@ slices:
       /etc/mysql/mysql.cnf:
       /etc/mysql/mysql.conf.d/mysql.cnf:
       /etc/mysql/mysql.conf.d/mysqld.cnf:
+      /var/lib/mysql/: {make: true, mode: 01777}
+      /var/lib/mysql-files/: {make: true, mode: 01777}
+      /var/run/mysql/: {make: true, mode: 01777}
 
   data:
     contents:
