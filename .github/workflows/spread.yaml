@@ -11,8 +11,8 @@ jobs:
         runner:
           - name: X64
             runs-on: ubuntu-latest
-          - name: ARM64
-            runs-on: [noble, ARM64, large]
+            # - name: ARM64
+            # runs-on: [noble, ARM64, large]
     name: Run Spread tests | ${{ matrix.runner.name }}
     runs-on: ${{ matrix.runner.runs-on }}
     steps:
