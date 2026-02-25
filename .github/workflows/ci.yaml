@@ -19,7 +19,7 @@ jobs:
 
   lint:
     name: Lint
-    uses: canonical/chisel-releases/.github/workflows/lint.yaml@main
+    uses: zhijie-yang/chisel-releases/.github/workflows/lint.yaml@fix-validate-hints-checkout
 
   integration-tests:
     name: Integration tests
