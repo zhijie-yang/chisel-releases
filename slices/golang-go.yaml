@@ -4,6 +4,7 @@ essential:
   golang-go_copyright:
 
 slices:
+  # TOOD: Fix the slices as golang-go now points to golang-1.25-go
   core:
     essential:
       golang-1.25-go_core:

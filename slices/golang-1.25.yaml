@@ -15,6 +15,20 @@ slices:
       golang-1.25-go_cgo-tools:
       golang-1.25_core:
 
+  symlinks:
+    essential:
+      golang-1.25_core:
+    contents:
+      /usr/bin/go:
+        symlink: ../lib/go-1.25/bin/go
+        prefer: golang-go
+      /usr/bin/gofmt:
+        symlink: ../lib/go-1.25/bin/gofmt
+        prefer: golang-go
+      /usr/lib/go:
+        symlink: ../share/go-1.25
+        prefer: golang-go
+
   copyright:
     contents:
       /usr/share/doc/golang-1.25/copyright:
